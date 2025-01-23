@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Compras</h1>
+    <h2>Presupuesto:</h2>
+    <input type="number" id="budgetInput" placeholder="Ingresa tu presupuesto..." step="0.01" />
+    <h2>Articulos:</h2>
+    <input type="text" id="itemInput" placeholder="Agregar artículo..." />
+    <input type="number" id="priceInput" placeholder="Precio del artículo..." step="0.01" />
+    <button onclick="addItem()">Agregar</button>
+    
+    <h2>Lista:</h2>
+    <ul id="shoppingList"></ul>
+
+    <div class="summary">
+      <h2>Resumen</h2>
+      <p>Total: $<span id="totalPrice">0.00</span></p>
+      <p id="budgetMessage"></p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Ariel Valle</p>
+    </footer>
+  <script src="app.js"></script>
+</body>
+</html>

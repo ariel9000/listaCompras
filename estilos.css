@@ -1,0 +1,77 @@
+html, body {
+    height: 100%; /* Asegura que el body ocupe toda la altura */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr auto; /* Dos filas: la primera toma el espacio disponible y la segunda es para el footer */
+    height: 100%; /* El body debe tener la altura completa */
+}
+h1, h2 {
+    color: #007bff;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+input, button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background: #333;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li button {
+    padding: 5px 10px;
+    background: #ff4d4d;
+    border: none;
+}
+li button:hover {
+    background: #cc0000;
+}
+.summary {
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    border-radius: 5px;
+}
+.over-budget {
+    color: #ff4d4d;
+}
+  /* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    margin-top: auto; /* Hace que el footer siempre quede al final de la página */
+}
+
+.content {
+    padding: 20px;
+}
